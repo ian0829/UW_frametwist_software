@@ -1,0 +1,30 @@
+import os
+
+FRAME_QUEUE_SIZE = 2
+TOTAL_MARKER_COUNT = 4
+
+MAX_FRAME_WIDTH = 2464
+MAX_FRAME_HEIGHT = 2064
+
+MARKER_SPACING = 1000  # pixels
+RELATIVE_DISTANCE_THRESHOLD = MARKER_SPACING / MAX_FRAME_WIDTH
+TOLERANCE_FACTOR = 0.05  # percentage
+COLINEARITY_THRESHOLD = 2000 #RELATIVE_DISTANCE_THRESHOLD * TOLERANCE_FACTOR
+
+FRAME_WIDTH = MAX_FRAME_WIDTH  # 768
+FRAME_HEIGHT = MAX_FRAME_HEIGHT  # 688
+
+DISPLAY_OUTPUT_WIDTH = 768
+DISPLAY_OUTPUT_HEIGHT = 688
+
+FRAME_RATE = 30
+DEVICE_FRAMERATE = 40  # Keep 0 to use default framerate (MAX)
+DEVICE_EXPOSURE = 2000  # in microseconds
+
+CAMERA_DEVICE_ID = "DEV_00012C04484D"
+images_directory = os.path.join(os.path.expanduser("~"), "Documents", "images")
+
+# QR codes to specifically detect
+left_aruco = "99"
+right_aruco = "10"
+center_aruco = "99"

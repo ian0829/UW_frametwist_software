@@ -1,0 +1,3 @@
+cropped_video.py will get coordinates from crop_coords.py and crop the frame
+
+when the ids != 3, re-get the coordinates
